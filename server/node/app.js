@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mongoose = require("mongoose");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -38,6 +39,11 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+//connect to mongodb
+mongoose.connect(
+  "mongodb+srv://admin:admin123@cluster0.kgbz4iv.mongodb.net/?retryWrites=true&w=majority"
+);
 
 app.listen(5000, () => console.log("app is running in PORT: 5000"));
 module.exports = app;
