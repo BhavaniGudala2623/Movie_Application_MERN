@@ -7,6 +7,7 @@ import CardHeader from '@mui/material/CardHeader';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import axios from 'axios'
+// import PropertyDetail from './PropertyDetail';
 
 const card = (PropertyDetail, index) => {
 
@@ -43,19 +44,23 @@ const card = (PropertyDetail, index) => {
 export default function Movies() {
 
     const [data, setData] = React.useState();
-    const baseURL='http:localhost:5000/movies';
+    const baseURL = 'http:localhost:5000/movies';
 
     React.useEffect(() => {
         axios.get(baseURL).then((response) => {
             setData(response.data);
             console.log(data)
         });
-      }, []);
+    }, []);
 
     return (
-        <div>
-            {data.map(card)}
-        </div>
-
+        <>
+            {/* <div>
+                {PropertyDetail.map(card)}
+            </div> */}
+            <div>
+                {data.map(card)}
+            </div>
+        </>
     );
 }
