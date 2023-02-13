@@ -7,7 +7,7 @@ import CardHeader from '@mui/material/CardHeader';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import axios from 'axios'
-// import PropertyDetail from './PropertyDetail';
+import PropertyDetail from './PropertyDetail';
 
 const card = (PropertyDetail, index) => {
 
@@ -52,15 +52,15 @@ export default function Movies() {
             console.log(data)
         });
     }, []);
-
+    console.log(PropertyDetail)
     return (
         <>
-            {/* <div>
-                {PropertyDetail.map(card)}
-            </div> */}
             <div>
-                {data.map(card)}
+                {PropertyDetail.map(card)}
             </div>
+            {/* <div>
+                {data.map(card)}
+            </div> */}
         </>
     );
 }
