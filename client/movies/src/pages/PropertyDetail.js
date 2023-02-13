@@ -1,0 +1,72 @@
+const PropertyDetail = [
+    {
+        id:"1",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+        
+    },
+    {
+        id:"2",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"3",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"4",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"5",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"6",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"7",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"8",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"9",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"10",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    {
+        id:"11",
+        name:"GabbarSing",
+        rating:"4",
+        relesedDate:"11-09-2020",
+    },
+    
+
+]
+export default PropertyDetail
